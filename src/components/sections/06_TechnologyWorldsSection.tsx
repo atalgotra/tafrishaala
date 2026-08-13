@@ -263,11 +263,10 @@ export function TechnologyWorldsSection() {
                     role="tab"
                     aria-selected={isActive}
                     aria-label={`Jump to Chapter ${world.index} ${world.name}`}
-                    className={`flex items-center gap-1.5 transition-all duration-300 py-0.5 cursor-pointer focus:outline-none focus:ring-1 focus:ring-[var(--accent-primary)] ${
-                      isActive
+                    className={`flex items-center gap-1.5 transition-all duration-300 py-0.5 cursor-pointer focus:outline-none focus:ring-1 focus:ring-[var(--accent-primary)] ${isActive
                         ? 'text-[var(--accent-primary)] font-bold border-b border-[var(--accent-primary)]'
                         : 'text-[var(--text-muted)] hover:text-[var(--text-secondary)] border-b border-transparent'
-                    }`}
+                      }`}
                   >
                     <span className="text-[9px] opacity-60">{world.index}</span>
                     <span>{world.name}</span>
@@ -369,15 +368,15 @@ export function TechnologyWorldsSection() {
                 {isIntro
                   ? 'EXPLORING THE PROTOCOL'
                   : isExit
-                  ? "YOU'VE SEEN THE WORLDS"
-                  : `CHAPTER ${activeWorld.index} / 06 — SCROLL TO TRAVEL`}
+                    ? "YOU'VE SEEN THE WORLDS"
+                    : `CHAPTER ${activeWorld.index} / 06 — SCROLL TO TRAVEL`}
               </span>
             </div>
 
             <span className="tracking-widest uppercase text-[10px] text-[var(--text-muted)]">
               {isExit
-                ? 'ENTERING WHAT YOU CAN BUILD ↓'
-                : 'NEXT: WHAT YOU CAN BUILD — EXPLORE THE DOMAINS ↓'}
+                ? 'ENTERING LEARNING TRACKS ↓'
+                : 'NEXT: SECTION 07 — LEARNING TRACKS ↓'}
             </span>
           </div>
         </div>
