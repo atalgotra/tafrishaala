@@ -63,7 +63,7 @@ export function ThemeSwitcher() {
 
       {/* Atmospheric Theme Deck Dropdown */}
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-72 sm:w-80 rounded-2xl border border-[var(--border-glow)] bg-[var(--bg-secondary)]/95 p-2 shadow-2xl backdrop-blur-2xl z-50 animate-in fade-in zoom-in-95 duration-200">
+        <div className="absolute right-0 mt-2 w-72 sm:w-80 rounded-2xl border border-[var(--border-glow)] bg-[var(--bg-secondary)] p-2 shadow-[0_25px_70px_rgba(0,0,0,0.9)] backdrop-blur-3xl z-50 animate-in fade-in zoom-in-95 duration-200">
           {/* Deck Header */}
           <div className="flex items-center justify-between px-3 py-2 mb-1.5 border-b border-[var(--border-subtle)]">
             <div className="flex items-center gap-1.5 text-[10px] font-mono tracking-widest text-[var(--text-muted)] uppercase">
