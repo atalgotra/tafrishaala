@@ -1,4 +1,4 @@
-export type ThemeId = 'void' | 'cyber' | 'neon' | 'aurora' | 'solar' | 'heritage';
+export type ThemeId = 'heritage' | 'cyber' | 'crimson' | 'cosmos' | 'neon' | 'aurora' | 'void';
 
 export interface ThemeConfig {
   id: ThemeId;

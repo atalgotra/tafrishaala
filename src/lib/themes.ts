@@ -65,21 +65,37 @@ export const THEMES: Record<ThemeId, ThemeConfig> = {
     textSecondary: '#96f0dc',
     textMuted: '#387063',
   },
-  solar: {
-    id: 'solar',
-    name: 'SOLAR',
-    tagline: 'Amber / Orange / Energetic',
-    accent: '#ff9e00',
-    secondary: '#ff3d00',
-    bgPrimary: '#0a0603',
-    bgSecondary: '#160c05',
-    glow: 'rgba(255, 158, 0, 0.35)',
-    particleColor: '#ff9e00',
-    borderSubtle: 'rgba(255, 158, 0, 0.12)',
-    borderGlow: 'rgba(255, 158, 0, 0.4)',
+  crimson: {
+    id: 'crimson',
+    name: 'CRIMSON',
+    tagline: 'Ruby / Crimson / High Voltage',
+    accent: '#FF2A3D',
+    secondary: '#FF6B7A',
+    bgPrimary: '#0D0304',
+    bgSecondary: '#1A0609',
+    glow: 'rgba(255, 42, 61, 0.35)',
+    particleColor: '#FF2A3D',
+    borderSubtle: 'rgba(255, 42, 61, 0.14)',
+    borderGlow: 'rgba(255, 42, 61, 0.4)',
     textColor: '#ffffff',
-    textSecondary: '#ffd299',
-    textMuted: '#805b33',
+    textSecondary: '#FFB8BE',
+    textMuted: '#8A4248',
+  },
+  cosmos: {
+    id: 'cosmos',
+    name: 'COSMOS',
+    tagline: 'Ultraviolet / Indigo / Deep Space',
+    accent: '#8B5CF6',
+    secondary: '#C084FC',
+    bgPrimary: '#07040D',
+    bgSecondary: '#12081E',
+    glow: 'rgba(139, 92, 246, 0.35)',
+    particleColor: '#8B5CF6',
+    borderSubtle: 'rgba(139, 92, 246, 0.14)',
+    borderGlow: 'rgba(139, 92, 246, 0.4)',
+    textColor: '#ffffff',
+    textSecondary: '#DDD6FE',
+    textMuted: '#6D5D8A',
   },
   heritage: {
     id: 'heritage',
@@ -100,4 +116,4 @@ export const THEMES: Record<ThemeId, ThemeConfig> = {
 };
 
 export const DEFAULT_THEME: ThemeId = 'heritage';
-export const THEME_IDS: ThemeId[] = ['heritage', 'cyber', 'solar', 'aurora', 'neon', 'void'];
+export const THEME_IDS: ThemeId[] = ['heritage', 'cyber', 'crimson', 'cosmos', 'neon', 'aurora', 'void'];
