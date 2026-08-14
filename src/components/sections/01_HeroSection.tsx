@@ -328,7 +328,7 @@ export function HeroSection() {
         ref={pinStageRef}
         id="hero"
         aria-label="Hero Section"
-        className="relative flex min-h-[100svh] w-full flex-col justify-between overflow-hidden px-6 pt-28 pb-10 lg:px-12"
+        className="relative flex min-h-[100svh] w-full flex-col justify-between overflow-hidden px-6 pt-28 pb-10 sm:pt-32 lg:px-12"
         style={{ perspective: '1400px' }}
       >
         {/* Dynamic Disintegration Particle Spark Canvas */}

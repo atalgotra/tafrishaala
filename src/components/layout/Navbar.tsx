@@ -38,7 +38,7 @@ export function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
           ? 'py-2.5 sm:py-3 border-b border-[var(--border-subtle)] bg-[var(--bg-overlay)] backdrop-blur-xl shadow-lg'
-          : 'py-4 sm:py-6 bg-transparent'
+          : 'py-3 sm:py-4 bg-[var(--bg-primary)]/80 backdrop-blur-md border-b border-[var(--border-subtle)]/30'
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-12">
@@ -58,8 +58,8 @@ export function Navbar() {
               alt="Tafrishaala Original Logo"
               className={`w-auto object-contain transition-all duration-300 drop-shadow-md ${
                 isScrolled
-                  ? 'h-14 sm:h-16 md:h-18 max-w-[280px]'
-                  : 'h-18 sm:h-22 md:h-26 max-w-[360px]'
+                  ? 'h-7 sm:h-8 max-w-[140px]'
+                  : 'h-8 sm:h-10 max-w-[170px]'
               }`}
               style={{ imageRendering: 'auto' }}
               onError={(e) => {
