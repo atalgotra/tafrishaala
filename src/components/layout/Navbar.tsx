@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { TafrishaalaLogo } from '@/components/ui/TafrishaalaLogo';
 import { ThemeSwitcher } from '@/components/ui/ThemeSwitcher';
 import { MagneticButton } from '@/components/ui/MagneticButton';
 import { Menu, X } from 'lucide-react';
@@ -42,7 +43,7 @@ export function Navbar() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-12">
-        {/* Brand Logo (Rendered Universally Across All Themes) */}
+        {/* Brand Logo (Native Vector SVG Marquee) */}
         <Link
           href="#hero"
           onClick={(e) => {
@@ -53,18 +54,12 @@ export function Navbar() {
           aria-label="Tafrishaala Home"
         >
           <div className="relative flex items-center transition-all duration-300">
-            <img
-              src="/brand/tafrishaala-original.png"
-              alt="Tafrishaala Original Logo"
-              className={`w-auto object-contain transition-all duration-300 drop-shadow-md ${
+            <TafrishaalaLogo
+              className={`w-auto transition-all duration-300 drop-shadow-md group-hover:scale-105 ${
                 isScrolled
-                  ? 'h-8 sm:h-9 max-w-[160px]'
-                  : 'h-11 sm:h-12 max-w-[210px]'
+                  ? 'h-8 sm:h-9'
+                  : 'h-10 sm:h-12'
               }`}
-              style={{ imageRendering: 'auto' }}
-              onError={(e) => {
-                (e.currentTarget as HTMLImageElement).src = '/brand/tafrishaala-original.webp';
-              }}
             />
           </div>
         </Link>
