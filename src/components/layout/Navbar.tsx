@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { TafrishaalaLogo } from '@/components/ui/TafrishaalaLogo';
 import { ThemeSwitcher } from '@/components/ui/ThemeSwitcher';
 import { MagneticButton } from '@/components/ui/MagneticButton';
 import { Menu, X } from 'lucide-react';
@@ -36,14 +35,13 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
           ? 'py-2 sm:py-2.5 border-b border-[var(--border-subtle)] bg-[var(--bg-overlay)] backdrop-blur-xl shadow-lg'
           : 'py-2.5 sm:py-3 bg-[var(--bg-primary)]/80 backdrop-blur-md border-b border-[var(--border-subtle)]/30'
-      }`}
+        }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-12">
-        {/* Brand Logo (Native Vector SVG Marquee) */}
+        {/* Brand Logo (Rendered Universally Across All Themes) */}
         <Link
           href="#hero"
           onClick={(e) => {
@@ -54,12 +52,17 @@ export function Navbar() {
           aria-label="Tafrishaala Home"
         >
           <div className="relative flex items-center transition-all duration-300">
-            <TafrishaalaLogo
-              className={`w-auto transition-all duration-300 drop-shadow-md group-hover:scale-105 ${
-                isScrolled
-                  ? 'h-8 sm:h-9'
-                  : 'h-10 sm:h-12'
-              }`}
+            <img
+              src="/brand/tafrishaala-original.png"
+              alt="Tafrishaala Original Logo"
+              className={`w-auto object-contain transition-all duration-300 drop-shadow-md ${isScrolled
+                  ? 'h-8 sm:h-9 max-w-[160px]'
+                  : 'h-11 sm:h-12 max-w-[210px]'
+                }`}
+              style={{ imageRendering: 'auto' }}
+              onError={(e) => {
+                (e.currentTarget as HTMLImageElement).src = '/brand/tafrishaala-original.webp';
+              }}
             />
           </div>
         </Link>
