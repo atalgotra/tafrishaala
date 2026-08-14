@@ -83,16 +83,16 @@ export function Navbar() {
           ))}
         </nav>
 
-        {/* Controls: Frequency Selector & Portal CTA */}
-        <div className="hidden md:flex items-center gap-4">
+        {/* Controls: Theme Switcher & Apply CTA */}
+        <div className="hidden md:flex items-center gap-3">
           <ThemeSwitcher />
           <MagneticButton
             variant="primary"
-            cursorText="PORTAL"
-            className="px-6 py-2.5 text-xs font-mono font-bold tracking-wider"
+            cursorText="APPLY"
+            className="px-5 py-2 text-xs font-mono font-bold tracking-wider rounded-full shadow-glow-sm"
             onClick={() => handleNavClick('cta')}
           >
-            ENTER PORTAL
+            APPLY NOW
           </MagneticButton>
         </div>
 
@@ -101,7 +101,7 @@ export function Navbar() {
           <ThemeSwitcher />
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="flex h-9 w-9 items-center justify-center rounded border border-[var(--border-subtle)] bg-[var(--bg-surface)] text-[var(--text-primary)] cursor-pointer focus:outline-none focus:ring-1 focus:ring-[var(--accent-primary)]"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-[var(--border-subtle)] bg-[var(--bg-surface)] text-[var(--text-primary)] cursor-pointer focus:outline-none focus:ring-1 focus:ring-[var(--accent-primary)]"
             aria-label="Toggle Mobile Menu"
             aria-expanded={mobileMenuOpen}
           >
@@ -132,9 +132,9 @@ export function Navbar() {
                   setMobileMenuOpen(false);
                   handleNavClick('cta');
                 }}
-                className="w-full rounded-full bg-[var(--accent-primary)] py-3 text-center font-mono text-xs uppercase tracking-widest text-[var(--bg-primary)] font-bold shadow-md cursor-pointer"
+                className="w-full rounded-full bg-[var(--accent-primary)] py-3 text-center font-mono text-xs uppercase tracking-widest text-[var(--bg-primary)] font-bold shadow-glow-sm cursor-pointer"
               >
-                ENTER PORTAL
+                APPLY NOW
               </button>
             </div>
           </div>
