@@ -207,7 +207,7 @@ export function RealExperienceSection() {
             <div className="flex items-center gap-3">
               <div className="font-mono text-[11px] tracking-[0.3em] text-[var(--accent-primary)] uppercase font-semibold flex items-center gap-2">
                 <Users className="h-3 w-3 text-[var(--accent-primary)]" />
-                // 09 REAL EVIDENCE
+                // 08 REAL EVIDENCE
               </div>
               <span className="text-[var(--border-subtle)]">|</span>
               <span className="font-mono text-xs text-[var(--text-secondary)] font-medium tracking-wider">
@@ -338,7 +338,7 @@ export function RealExperienceSection() {
         <div className="text-center mb-12">
           <div className="mb-2 font-mono text-[10px] tracking-[0.25em] text-[var(--accent-primary)] uppercase font-semibold flex items-center justify-center gap-1.5">
             <Users className="h-3 w-3 text-[var(--accent-primary)]" />
-            // 09 REAL EVIDENCE
+            // 08 REAL EVIDENCE
           </div>
           <h2 className="font-display text-3xl sm:text-4xl font-black tracking-tight text-[var(--text-primary)]">
             REAL LEARNING. REAL PEOPLE.

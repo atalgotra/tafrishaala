@@ -309,11 +309,11 @@ export function FutureStatementSection() {
 
           <MagneticButton
             variant="primary"
-            cursorText="WORLDS"
+            cursorText="BUILD"
             className="px-6 py-2.5 text-xs font-bold rounded-full shadow-glow-sm"
-            onClick={() => handleScrollToSection('worlds')}
+            onClick={() => handleScrollToSection('build')}
           >
-            EXPLORE TECHNOLOGY WORLDS <ArrowDown className="h-3.5 w-3.5 ml-1.5 inline" />
+            WHAT DO YOU WANT TO BUILD? <ArrowDown className="h-3.5 w-3.5 ml-1.5 inline" />
           </MagneticButton>
         </div>
       </div>

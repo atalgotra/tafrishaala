@@ -376,7 +376,7 @@ export function WhatToBuildSection() {
         >
           <div className="mb-3 font-mono text-[11px] tracking-[0.3em] text-[var(--accent-primary)] uppercase font-semibold flex items-center justify-center gap-2">
             <Sparkles className="h-3 w-3 text-[var(--accent-primary)]" />
-            // 04 CREATIVE INTENT
+            // 03 CREATIVE INTENT
           </div>
 
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-[var(--text-primary)] leading-[1.05]">
@@ -488,7 +488,7 @@ export function WhatToBuildSection() {
         <div className="mb-8">
           <div className="mb-2 font-mono text-[10px] tracking-[0.25em] text-[var(--accent-primary)] uppercase font-semibold flex items-center gap-1.5">
             <Sparkles className="h-3 w-3 text-[var(--accent-primary)]" />
-            // 04 CREATIVE INTENT
+            // 03 CREATIVE INTENT
           </div>
           <h2 className="font-display text-3xl font-black tracking-tight text-[var(--text-primary)]">
             WHAT DO YOU WANT TO BUILD?

@@ -145,7 +145,7 @@ export function LearningJourneySection() {
         <div ref={headerRef} className="mb-14 will-change-transform">
           <div className="mb-3 font-mono text-[11px] tracking-[0.3em] text-[var(--accent-primary)] uppercase font-semibold flex items-center gap-2">
             <Sparkles className="h-3 w-3 text-[var(--accent-primary)]" />
-            // 05 THE METHODOLOGY
+            // 04 THE LEARNING JOURNEY
           </div>
 
           <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-[var(--text-primary)]">

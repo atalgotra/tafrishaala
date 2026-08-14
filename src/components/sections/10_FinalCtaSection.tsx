@@ -125,7 +125,7 @@ export function FinalCtaSection() {
             <div className="flex items-center gap-3">
               <div className="font-mono text-[11px] tracking-[0.3em] text-[var(--accent-primary)] uppercase font-semibold flex items-center gap-2">
                 <Sparkles className="h-3 w-3 text-[var(--accent-primary)]" />
-                // 10 FINAL CHAPTER
+                // 09 FINAL CHAPTER
               </div>
               <span className="text-[var(--border-subtle)]">|</span>
               <span className="font-mono text-xs text-[var(--text-secondary)] font-medium tracking-wider">

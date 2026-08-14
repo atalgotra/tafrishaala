@@ -1,7 +1,6 @@
 import React from 'react';
 import { HeroSection } from '@/components/sections/01_HeroSection';
 import { FutureStatementSection } from '@/components/sections/02_FutureStatementSection';
-import { FrequencySection } from '@/components/sections/03_FrequencySection';
 import { WhatToBuildSection } from '@/components/sections/04_WhatToBuildSection';
 import { LearningJourneySection } from '@/components/sections/05_LearningJourneySection';
 import { TechnologyWorldsSection } from '@/components/sections/06_TechnologyWorldsSection';
@@ -17,11 +16,10 @@ export default function HomePage() {
       {/* 01. Hero Section (Pinned Continuous Spatial Transformation) */}
       <HeroSection />
 
-      {/* 02. Future Statement Section (Decoupled in Normal Document Flow) */}
+      {/* 02. Why Tafrishaala (The Paradigm Shift) */}
       <FutureStatementSection />
 
-      {/* 03 - 10. Progressive Experience Sections */}
-      <FrequencySection />
+      {/* 03 - 09. Progressive Experience Sections */}
       <WhatToBuildSection />
       <LearningJourneySection />
       <TechnologyWorldsSection />

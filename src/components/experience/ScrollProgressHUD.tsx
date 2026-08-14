@@ -5,7 +5,6 @@ import React, { useEffect, useState } from 'react';
 const SECTION_IDS = [
   'hero',
   'statement',
-  'frequency',
   'build',
   'journey',
   'worlds',
@@ -69,7 +68,7 @@ export function ScrollProgressHUD() {
       <div className="flex items-center gap-1 border border-[var(--border-subtle)] bg-[var(--bg-overlay)] px-2.5 py-1 rounded backdrop-blur-md">
         <span className="text-[var(--accent-primary)] font-bold">{sectionIndex}</span>
         <span className="text-[var(--border-subtle)]">/</span>
-        <span className="text-[var(--text-muted)]">10</span>
+        <span className="text-[var(--text-muted)]">09</span>
         <span className="text-[var(--border-subtle)] mx-1">|</span>
         <span className="text-[var(--text-primary)] min-w-[28px] text-right font-medium">
           {progress}%
