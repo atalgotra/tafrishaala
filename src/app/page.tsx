@@ -7,6 +7,7 @@ import { TechnologyWorldsSection } from '@/components/sections/06_TechnologyWorl
 import { LearningTracksSection } from '@/components/sections/07_LearningTracksSection';
 import { MethodSection } from '@/components/sections/08_MethodSection';
 import { RealExperienceSection } from '@/components/sections/09_RealExperienceSection';
+import { AwardsSection } from '@/components/sections/AwardsSection';
 import { FinalCtaSection } from '@/components/sections/10_FinalCtaSection';
 import { Footer } from '@/components/layout/Footer';
 
@@ -19,13 +20,14 @@ export default function HomePage() {
       {/* 02. Why Tafrishaala (The Paradigm Shift) */}
       <FutureStatementSection />
 
-      {/* 03 - 09. Progressive Experience Sections */}
+      {/* 03 - 10. Progressive Experience Sections */}
       <WhatToBuildSection />
       <LearningJourneySection />
       <TechnologyWorldsSection />
       <LearningTracksSection />
       <MethodSection />
       <RealExperienceSection />
+      <AwardsSection />
       <FinalCtaSection />
 
       {/* 11. Structural Colophon & Footer */}
