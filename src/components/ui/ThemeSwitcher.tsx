@@ -16,8 +16,18 @@ export function ThemeSwitcher() {
         setIsOpen(false);
       }
     };
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsOpen(false);
+      }
+    };
+
     document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
   }, []);
 
   if (!mounted) {
@@ -87,7 +97,6 @@ export function ThemeSwitcher() {
                   key={id}
                   onClick={() => {
                     setTheme(id);
-                    setIsOpen(false);
                   }}
                   className={`w-full group/card flex items-center justify-between rounded-xl p-2 text-left transition-all duration-200 cursor-pointer ${
                     isActive
