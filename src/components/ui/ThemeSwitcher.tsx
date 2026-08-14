@@ -73,7 +73,10 @@ export function ThemeSwitcher() {
 
       {/* Atmospheric Theme Deck Dropdown */}
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-72 sm:w-80 rounded-2xl border border-[var(--border-glow)] bg-[var(--bg-secondary)] p-2 shadow-[0_25px_70px_rgba(0,0,0,0.9)] backdrop-blur-3xl z-50 animate-in fade-in zoom-in-95 duration-200">
+        <div
+          data-lenis-prevent="true"
+          className="absolute right-0 mt-2 w-72 sm:w-80 rounded-2xl border border-[var(--border-glow)] bg-[var(--bg-secondary)] p-2 shadow-[0_25px_70px_rgba(0,0,0,0.9)] backdrop-blur-3xl z-50 animate-in fade-in zoom-in-95 duration-200"
+        >
           {/* Deck Header */}
           <div className="flex items-center justify-between px-3 py-2 mb-1.5 border-b border-[var(--border-subtle)]">
             <div className="flex items-center gap-1.5 text-[10px] font-mono tracking-widest text-[var(--text-muted)] uppercase">
@@ -86,7 +89,11 @@ export function ThemeSwitcher() {
           </div>
 
           {/* Theme Palette Cards (Scrollable Deck) */}
-          <div className="space-y-1.5 max-h-[65vh] overflow-y-auto pr-1 scrollbar-thin">
+          <div
+            data-lenis-prevent="true"
+            className="space-y-1.5 max-h-[60vh] overflow-y-auto pr-1 overscroll-contain theme-deck-scroll"
+            style={{ touchAction: 'pan-y' }}
+          >
             {THEME_IDS.map((id) => {
               const item = THEMES[id];
               const isActive = theme === id;

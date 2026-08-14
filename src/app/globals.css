@@ -273,6 +273,28 @@ html.lenis, html.lenis body {
   background: var(--accent-primary);
 }
 
+.theme-deck-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-glow) transparent;
+}
+
+.theme-deck-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.theme-deck-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.theme-deck-scroll::-webkit-scrollbar-thumb {
+  background: var(--border-subtle);
+  border-radius: 4px;
+}
+
+.theme-deck-scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary);
+}
+
 /* Spatial & Glow Utilities */
 .glow-accent {
   box-shadow: 0 0 35px -5px var(--accent-glow);
