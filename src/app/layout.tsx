@@ -64,7 +64,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      data-theme="void"
+      data-theme="heritage"
       className={`${inter.variable} ${outfit.variable} ${jetbrainsMono.variable} dark`}
       suppressHydrationWarning
     >

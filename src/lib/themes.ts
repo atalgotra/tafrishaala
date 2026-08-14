@@ -99,5 +99,5 @@ export const THEMES: Record<ThemeId, ThemeConfig> = {
   },
 };
 
-export const DEFAULT_THEME: ThemeId = 'void';
-export const THEME_IDS: ThemeId[] = ['void', 'cyber', 'neon', 'aurora', 'solar', 'heritage'];
+export const DEFAULT_THEME: ThemeId = 'heritage';
+export const THEME_IDS: ThemeId[] = ['heritage', 'cyber', 'solar', 'aurora', 'neon', 'void'];

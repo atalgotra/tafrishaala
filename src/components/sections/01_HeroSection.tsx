@@ -349,15 +349,12 @@ export function HeroSection() {
         <div className="relative z-30 mx-auto flex w-full max-w-7xl items-center justify-between font-mono text-[10px] text-[var(--text-muted)] select-none">
           <div ref={bootStatusRef} className="flex items-center gap-2">
             <span className="flex h-1.5 w-1.5 rounded-full bg-[var(--accent-primary)] shadow-glow-sm animate-pulse" />
-            <span className="tracking-widest uppercase text-[var(--text-secondary)]">
-              SYS.BOOT // 01
-            </span>
+
           </div>
 
           <div className="hidden sm:flex items-center gap-2 text-[var(--text-muted)]">
-            <span>CREATIVE TECH LABS</span>
-            <span>•</span>
-            <span className="text-[var(--accent-primary)]">NOIDA</span>
+
+
           </div>
         </div>
 
