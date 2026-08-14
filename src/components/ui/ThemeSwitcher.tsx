@@ -75,8 +75,8 @@ export function ThemeSwitcher() {
             </span>
           </div>
 
-          {/* Theme Palette Cards */}
-          <div className="space-y-1.5">
+          {/* Theme Palette Cards (Scrollable Deck) */}
+          <div className="space-y-1.5 max-h-[65vh] overflow-y-auto pr-1 scrollbar-thin">
             {THEME_IDS.map((id) => {
               const item = THEMES[id];
               const isActive = theme === id;

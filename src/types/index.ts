@@ -1,4 +1,16 @@
-export type ThemeId = 'heritage' | 'cyber' | 'crimson' | 'cosmos' | 'neon' | 'aurora' | 'void';
+export type ThemeId =
+  | 'heritage'
+  | 'cyber'
+  | 'crimson'
+  | 'cosmos'
+  | 'matrix'
+  | 'chrono'
+  | 'cobalt'
+  | 'synthwave'
+  | 'neon'
+  | 'aurora'
+  | 'alabaster'
+  | 'void';
 
 export interface ThemeConfig {
   id: ThemeId;

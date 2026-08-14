@@ -115,6 +115,86 @@
   --text-muted: #6D5D8A;
 }
 
+[data-theme="matrix"] {
+  --bg-primary: #020A05;
+  --bg-secondary: #05140A;
+  --bg-surface: rgba(0, 255, 102, 0.04);
+  --bg-overlay: rgba(2, 10, 5, 0.88);
+  --accent-primary: #00FF66;
+  --accent-secondary: #34D399;
+  --accent-glow: rgba(0, 255, 102, 0.35);
+  --particle-color: #00FF66;
+  --border-subtle: rgba(0, 255, 102, 0.14);
+  --border-glow: rgba(0, 255, 102, 0.4);
+  --text-primary: #ffffff;
+  --text-secondary: #A7F3D0;
+  --text-muted: #3D7A5C;
+}
+
+[data-theme="chrono"] {
+  --bg-primary: #080706;
+  --bg-secondary: #14120F;
+  --bg-surface: rgba(230, 198, 135, 0.04);
+  --bg-overlay: rgba(8, 7, 6, 0.88);
+  --accent-primary: #E6C687;
+  --accent-secondary: #F5E5C9;
+  --accent-glow: rgba(230, 198, 135, 0.35);
+  --particle-color: #E6C687;
+  --border-subtle: rgba(230, 198, 135, 0.14);
+  --border-glow: rgba(230, 198, 135, 0.4);
+  --text-primary: #FFF9EE;
+  --text-secondary: #D4C3A3;
+  --text-muted: #7E7158;
+}
+
+[data-theme="cobalt"] {
+  --bg-primary: #020617;
+  --bg-secondary: #08112A;
+  --bg-surface: rgba(37, 99, 235, 0.04);
+  --bg-overlay: rgba(2, 6, 23, 0.88);
+  --accent-primary: #3B82F6;
+  --accent-secondary: #60A5FA;
+  --accent-glow: rgba(59, 130, 246, 0.35);
+  --particle-color: #3B82F6;
+  --border-subtle: rgba(59, 130, 246, 0.14);
+  --border-glow: rgba(59, 130, 246, 0.4);
+  --text-primary: #ffffff;
+  --text-secondary: #BFDBFE;
+  --text-muted: #3B609E;
+}
+
+[data-theme="synthwave"] {
+  --bg-primary: #0B0410;
+  --bg-secondary: #160820;
+  --bg-surface: rgba(255, 94, 58, 0.04);
+  --bg-overlay: rgba(11, 4, 16, 0.88);
+  --accent-primary: #FF5E3A;
+  --accent-secondary: #D946EF;
+  --accent-glow: rgba(255, 94, 58, 0.35);
+  --particle-color: #FF5E3A;
+  --border-subtle: rgba(255, 94, 58, 0.14);
+  --border-glow: rgba(217, 70, 239, 0.4);
+  --text-primary: #ffffff;
+  --text-secondary: #F5D0FE;
+  --text-muted: #86469C;
+}
+
+[data-theme="alabaster"] {
+  --bg-primary: #F4F4F5;
+  --bg-secondary: #E4E4E7;
+  --bg-surface: rgba(0, 0, 0, 0.03);
+  --bg-overlay: rgba(244, 244, 245, 0.92);
+  --accent-primary: #FF5500;
+  --accent-secondary: #18181B;
+  --accent-glow: rgba(255, 85, 0, 0.25);
+  --particle-color: #FF5500;
+  --border-subtle: rgba(0, 0, 0, 0.08);
+  --border-glow: rgba(255, 85, 0, 0.35);
+  --text-primary: #09090B;
+  --text-secondary: #52525B;
+  --text-muted: #A1A1AA;
+}
+
 [data-theme="heritage"] {
   --bg-primary: #120B06;
   --bg-secondary: #1C1008;
